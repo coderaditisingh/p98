@@ -1,0 +1,43 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+<link href="style.css" rel="stylesheet">
+
+</head>
+ 
+<body background="party-1.jpeg">
+    <div class="container">
+    <center>
+        <a href="" id="link" download="My_perfect_picture.png"></a>
+        <h1>Voice Selfie App 
+        <img src="selfie gif.gif" id="logo_img">
+        </h1>
+        <hr>
+        <h4 style="color:rgb(250, 206, 165);">Please press allow as soon as popup comes. After you give a voice command</h4>
+        
+        <div class="form-group">
+            <h3>Say "Cheese"</h3>
+            <label>Your voice output : </label>
+        <textarea class="form-control" id="text_box" readonly="true"></textarea>
+        </div>
+        <button class="btn btn-warning" onclick="start();">Click</button>
+        <p>Press the Start button</p>
+<div class="col-lg-6 col-sm-6">
+        <label>Your webcam : </label>
+         <div id="camera"></div>
+        <br>
+    </div>
+    <div class="col-lg-6 col-sm-6"></div>
+     <label>Your selife Will Display Here: </label>
+        <div id="result" class="col-lg-6 col-sm-6"></div>
+    </center>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
